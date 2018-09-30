@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>737</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="fmradio">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>240</y>
+      <width>141</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>resources/radio.png</normaloff>resources/radio.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>85</width>
+      <height>85</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Skywarn">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>240</y>
+      <width>141</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>resources/skywarn.png</normaloff>resources/skywarn.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>85</width>
+      <height>85</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="hamradio">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>240</y>
+      <width>141</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>resources/HAMRadio.png</normaloff>resources/HAMRadio.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>85</width>
+      <height>85</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Police">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>240</y>
+      <width>141</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>resources/POLICE.png</normaloff>resources/POLICE.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>85</width>
+      <height>85</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="sopel">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>10</y>
+      <width>501</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>resources/sopel.png</pixmap>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
