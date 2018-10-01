@@ -59,20 +59,32 @@ MainWindow::~MainWindow()
 
 void MainWindow::fmbutton_clicked()
 {
+    QWidget *fm = new QWidget;
+    fm->show();
+    hide();
     std::cout << "FM Window" << std::endl;
 }
 
 void MainWindow::skywarnbutton_clicked()
 {
+    QWidget *skywarn = new QWidget;
+    skywarn->show();
+    hide();
     std::cout << "SkyWarn Window" << std::endl;
 }
 
 void MainWindow::hambutton_clicked()
 {
+    QWidget *ham = new QWidget;
+    ham->show();
+    hide();
     std::cout << "Ham Window" << std::endl;
 }
 
 void MainWindow::policebutton_clicked()
 {
+    QWidget *police = new QWidget;
+    police->show();
+    hide();
     std::cout << "Police Window" << std::endl;
 }

@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QPushButton>
+#include <QWidget>
 
 namespace Ui {
 class MainWindow;
@@ -30,5 +31,6 @@ private slots:
     void hambutton_clicked();
     void policebutton_clicked();
 };
+
 
 #endif // MAINWINDOW_H
