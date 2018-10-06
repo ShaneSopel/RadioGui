@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>HamRadio</string>
+   <string>Ham Radio</string>
   </property>
   <widget class="QPushButton" name="UpButton">
    <property name="geometry">
