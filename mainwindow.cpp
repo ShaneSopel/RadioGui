@@ -1,6 +1,8 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "fmwindow.h"
 #include <iostream>
+#include <QApplication>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -59,8 +61,9 @@ MainWindow::~MainWindow()
 
 void MainWindow::fmbutton_clicked()
 {
-    QWidget *fm = new QWidget;
-    fm->show();
+    static FmWindow fm;
+    fm.show();
+
     hide();
     std::cout << "FM Window" << std::endl;
 }

@@ -4,10 +4,13 @@
 #include <QMainWindow>
 #include <QPushButton>
 #include <QWidget>
+#include "fmwindow.h"
 
 namespace Ui {
-class MainWindow;
+        class MainWindow;
+        class FmWindow;
 }
+
 
 class MainWindow : public QMainWindow
 {
@@ -19,11 +22,14 @@ public:
     void openFM();
 
 private:
+
     Ui::MainWindow *ui;
     QPushButton *fmbutton;
     QPushButton *skywarnbutton;
     QPushButton *hambutton;
     QPushButton *policebutton;
+
+
 
 private slots:
     void fmbutton_clicked();
@@ -31,6 +37,5 @@ private slots:
     void hambutton_clicked();
     void policebutton_clicked();
 };
-
 
 #endif // MAINWINDOW_H

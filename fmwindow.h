@@ -4,8 +4,10 @@
 #include <QMainWindow>
 #include <QPushButton>
 #include <QWidget>
+#include <QLCDNumber>
+#include "mainwindow.h"
 
-namespace Ui {
+namespace Ui{
 class FmWindow;
 }
 
@@ -16,10 +18,26 @@ class FmWindow : public QWidget
 public:
     explicit FmWindow(QWidget *parent = 0);
     ~FmWindow();
+    void updateAddFreq();
+    void updateSubFreq();
 
 private:
-    Ui::FmWindow *start;
+    Ui::FmWindow *ui;
 
-};
+    QLCDNumber     *lcdscreen;
+    QPushButton    *upbutton;
+    QPushButton    *downbutton;
+    QPushButton    *scanbutton;
+    QPushButton    *homebutton;
 
+    double fmfreq;
+
+
+private slots:
+    void upbutton_clicked();
+    void downbutton_clicked();
+    void scanbutton_clicked();
+    void homebutton_clicked();
+
+}; //end class FmWindow
 #endif // FMWINDOW_H
