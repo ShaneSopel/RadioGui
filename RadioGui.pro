@@ -26,12 +26,21 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    fmwindow.cpp
+    fmwindow.cpp \
+    skywarnwindow.cpp \
+    policewindow.cpp \
+    hamwindow.cpp
 
 HEADERS += \
         mainwindow.h \
-    fmwindow.h
+    fmwindow.h \
+    skywarnwindow.h \
+    policewindow.h \
+    hamwindow.h
 
 FORMS += \
         mainwindow.ui \
-    fmwindow.ui
+    fmwindow.ui \
+    skywarnwindow.ui \
+    policewindow.ui \
+    hamwindow.ui

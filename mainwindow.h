@@ -9,6 +9,7 @@
 namespace Ui {
         class MainWindow;
         class FmWindow;
+        class SkyWarnWindow;
 }
 
 

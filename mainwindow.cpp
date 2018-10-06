@@ -1,6 +1,9 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "fmwindow.h"
+#include "skywarnwindow.h"
+#include "policewindow.h"
+#include "hamwindow.h"
 #include <iostream>
 #include <QApplication>
 
@@ -70,24 +73,27 @@ void MainWindow::fmbutton_clicked()
 
 void MainWindow::skywarnbutton_clicked()
 {
-    QWidget *skywarn = new QWidget;
-    skywarn->show();
+    static SkyWarnWindow sky;
+    sky.show();
+
     hide();
     std::cout << "SkyWarn Window" << std::endl;
 }
 
 void MainWindow::hambutton_clicked()
 {
-    QWidget *ham = new QWidget;
-    ham->show();
+    static HamWindow ham;
+    ham.show();
+
     hide();
     std::cout << "Ham Window" << std::endl;
 }
 
 void MainWindow::policebutton_clicked()
 {
-    QWidget *police = new QWidget;
-    police->show();
+    static PoliceWindow police;
+    police.show();
+
     hide();
     std::cout << "Police Window" << std::endl;
 }
