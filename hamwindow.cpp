@@ -36,7 +36,7 @@ HamWindow::HamWindow(QWidget *parent) :
     scanbutton = new QPushButton(this);
     connect(ui->ScanButton,SIGNAL(clicked()), this, SLOT(scanbutton_clicked()));
 
-    QString freq = QString::number(skyfreq);
+    QString freq = QString::number(hamfreq);
     ui->lcdNumber->display(freq);
 
 }
